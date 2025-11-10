@@ -76,6 +76,26 @@ pip install --upgrade pip setuptools wheel
 # Install requirements
 pip install -r requirements.txt
 
+# if theres problem installing xformers on MacOS
+Install with OpenMP Support (For macOS)
+If you want xformers, install OpenMP first using Homebrew:
+
+# Install libomp (OpenMP for macOS)
+brew install libomp
+
+# Set environment variables before installing
+export LDFLAGS="-L/opt/homebrew/opt/libomp/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libomp/include"
+export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"
+
+# Now install requirements
+pip install -r requirements.txt
+
+Install with OpenMP Support (For macOS)
+If you want xformers, install OpenMP first using Homebrew:
+
+
+
 # Verify installation
 python -c "import torch; print(f'PyTorch: {torch.__version__}')"
 python -c "import transformers; print(f'Transformers: {transformers.__version__}')"

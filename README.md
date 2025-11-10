@@ -53,7 +53,7 @@ Financial Analyst Advisor/
 
 ```bash
 # Clone repository
-git clone <repo-url>
+git clone <https://github.com/lilswapnil/genAI-financial-advisor.git>
 cd "Financial Analyst Advisor"
 
 # Create virtual environment

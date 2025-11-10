@@ -1,13 +1,4 @@
-"""
-Requirements for Financial Analyst Advisor
 
-Core dependencies:
-- Data Processing & NLP
-- Vector Databases
-- Fine-tuning & Model Serving
-- API & Web Framework
-- Utilities
-"""
 
 # ==================== Core ML/AI ====================
 torch>=2.0.0
@@ -23,7 +14,7 @@ pinecone-client>=2.2.0  # Optional: Pinecone support
 # ==================== Quantization & Optimization ====================
 bitsandbytes>=0.41.0  # 4-bit quantization
 accelerate>=0.24.0  # Multi-GPU support
-xformers>=0.0.22  # Flash attention
+# xformers>=0.0.22  # Flash attention
 
 # ==================== Web Scraping ====================
 requests>=2.31.0

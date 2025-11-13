@@ -1,5 +1,4 @@
-"""
-RAG (Retrieval-Augmented Generation) Pipeline
+"""RAG (Retrieval-Augmented Generation) Pipeline.
 
 This module handles:
 - Document loading and preprocessing

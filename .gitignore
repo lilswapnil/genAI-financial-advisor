@@ -1,4 +1,4 @@
-# Python
+# ==================== Python ====================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -23,67 +23,99 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environments
+# ==================== Virtual Environments ====================
 venv/
 ENV/
 env/
-.venv
+.venv/
 env.bak/
 venv.bak/
+conda-meta/
 
-# IDE
+# ==================== IDE & Editors ====================
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.DS_Store
 .project
 .pydevproject
 .settings/
 *.sublime-project
 *.sublime-workspace
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# ==================== Jupyter Notebook ====================
+.ipynb_checkpoints/
 *.ipynb
 
-# Testing
+# ==================== Testing ====================
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 .hypothesis/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
 
-# Data & Models
+# ==================== Data & Models ====================
 data/raw_reports/
 data/processed/
 data/vector_db/
 models/llama_finetuned/
+models/checkpoints/
+*.pkl
+*.pickle
 
-# Logs
+# ==================== Logs ====================
 *.log
 logs/
+wandb/
+.wandb/
 
-# Environment variables
+# ==================== Environment Variables ====================
 .env
 .env.local
 .env.*.local
 
-# OS
+# ==================== Operating System ====================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Project specific
+# ==================== Project Specific ====================
 *.db
 *.sqlite
 *.sqlite3
 huggingface_cache/
-.wandb/
-wandb/
+.huggingface/
+tmp/
+temp/
+cache/
 
-# Credentials
+# ==================== Security & Credentials ====================
 *.pem
 *.key
+*.p12
+*.pfx
 credentials.json
 secrets.json
+config/secrets/
+.ssh/
+
+# ==================== Large Files ====================
+*.bin
+*.safetensors
+*.h5
+*.model
+*.pt
+*.pth
+
+# ==================== Documentation Build ====================
+docs/_build/
+site/

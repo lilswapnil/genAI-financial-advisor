@@ -5,22 +5,22 @@ torch>=2.0.0
 transformers>=4.30.0
 peft>=0.4.0  # LoRA implementation
 langchain>=0.1.0
+langchain-huggingface>=0.0.3
+langchain-chroma>=0.1.2
+langchain-text-splitters>=0.0.1
+langchain-core>=0.1.52
 sentence-transformers>=2.2.0
 
-# ==================== Vector Databases ====================
+# ==================== Vector Database ====================
 chromadb>=0.4.0
-pinecone-client>=2.2.0  # Optional: Pinecone support
 
 # ==================== Quantization & Optimization ====================
 bitsandbytes>=0.41.0  # 4-bit quantization
 accelerate>=0.24.0  # Multi-GPU support
-# xformers>=0.0.22  # Flash attention
 
 # ==================== Web Scraping ====================
 requests>=2.31.0
 beautifulsoup4>=4.12.0
-scrapy>=2.9.0  # Optional: for more complex scraping
-selenium>=4.10.0  # Optional: for JavaScript-heavy sites
 
 # ==================== API & Server ====================
 fastapi>=0.104.0
@@ -28,21 +28,14 @@ uvicorn[standard]>=0.24.0
 pydantic>=2.0.0
 python-multipart>=0.0.6
 
-# ==================== Database ====================
-sqlalchemy>=2.0.0
-psycopg2-binary>=2.9.0  # PostgreSQL adapter
-
 # ==================== Utilities ====================
 numpy>=1.24.0
 pandas>=2.0.0
-scipy>=1.10.0
-scikit-learn>=1.3.0
 tqdm>=4.66.0
 
 # ==================== Monitoring & Logging ====================
 wandb>=0.15.0  # Weights & Biases for training monitoring
 python-dotenv>=1.0.0
-python-json-logger>=2.0.0
 
 # ==================== Development ====================
 pytest>=7.4.0
@@ -50,10 +43,3 @@ pytest-cov>=4.1.0
 black>=23.0.0
 flake8>=6.0.0
 mypy>=1.5.0
-jupyter>=1.0.0
-notebook>=7.0.0
-ipython>=8.12.0
-
-# ==================== Environment Management ====================
-# These should be handled by conda/venv but listed for completeness
-# python>=3.9,<3.12  # Uncomment when using pip for environment management

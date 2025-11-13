@@ -1,5 +1,4 @@
-"""
-SEC Financial Reports Scraper
+"""SEC Financial Reports Scraper.
 
 This module fetches 10-K and 10-Q reports from the SEC EDGAR database.
 It uses the SEC's REST API for efficient data retrieval.

@@ -8,15 +8,17 @@ Provides endpoints for:
 - Model inference
 """
 
+"""FastAPI REST API for Financial Analyst Chatbot."""
+
 import os
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
-from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
 import uvicorn
 
 logging.basicConfig(level=logging.INFO)
@@ -135,7 +137,7 @@ def load_fine_tuned_model():
         return False
 
 
-def generate_answer(question: str, context: str) -> tuple[str, float]:
+def generate_answer(question: str, context: str) -> Tuple[str, float]:
     """
     Generate answer using fine-tuned model.
     

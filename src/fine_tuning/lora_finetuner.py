@@ -1,5 +1,4 @@
-"""
-LoRA Fine-Tuning for LLaMA Model
+"""LoRA Fine-Tuning for LLaMA Model.
 
 This module implements Low-Rank Adaptation (LoRA) fine-tuning for the LLaMA model.
 LoRA is efficient because it only trains a small number of additional parameters
